@@ -6,13 +6,19 @@ import {
   LogoContainer,
   TextContainer,
 } from './style'
+import Image from 'next/image'
 
 const Home = () => {
   return (
     <HomeContainer>
       <LogoContainer>
-        <img src="triple2x.png" alt="triple awards" />
-        <span>2021년 12월 기준</span>
+        <Image
+          src={'/triple2x.png'}
+          width={400}
+          height={338}
+          alt="triple awards"
+        />
+        <span className="subTitle">2021년 12월 기준</span>
       </LogoContainer>
       <IntroductionContainer>
         <TextContainer>
@@ -28,7 +34,12 @@ const Home = () => {
         </TextContainer>
         <AwardsContainer>
           <div className="container">
-            <img src="play-store2x.png" alt="playstore awards" />
+            <Image
+              src={'/play-store2x.png'}
+              width={54}
+              height={54}
+              alt="playstore awards"
+            />
             <p>
               2018 구글 플레이스토어
               <br />
@@ -36,7 +47,12 @@ const Home = () => {
             </p>
           </div>
           <div className="container">
-            <img src="badge-apple4x.png" alt="app store awards" />
+            <Image
+              src={'/badge-apple4x.png'}
+              width={54}
+              height={54}
+              alt="app store awards"
+            />
             <p>
               2018 애플 앱스토어
               <br />

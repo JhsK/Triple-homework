@@ -11,11 +11,7 @@ export const LogoContainer = styled.div`
   width: 400px;
   height: 338px;
 
-  img {
-    width: 100%;
-  }
-
-  span {
+  .subTitle {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -56,9 +52,5 @@ export const AwardsContainer = styled.div`
     gap: 8px;
     color: ${(props) => props.theme.gray800};
     font-weight: bold;
-
-    img {
-      height: 100%;
-    }
   }
 `
