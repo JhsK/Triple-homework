@@ -17,7 +17,6 @@ function GlobalStyle() {
         body {
           overflow-x: hidden;
           width: 100%;
-          min-width: 1200px;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
           text-size-adjust: none;
           line-height: 1;
