@@ -30,6 +30,7 @@ const Home = () => {
         <TextContainer>
           {COUNT_NUMBER_TEXT.map((item) => (
             <NumberCount
+              key={item.basicText}
               countValue={item.countValue}
               strongText={item.strongText}
               basicText={item.basicText}
