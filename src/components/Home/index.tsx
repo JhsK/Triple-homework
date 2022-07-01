@@ -14,7 +14,6 @@ import NumberCount from './numberCount'
 const Home = () => {
   const value = useCountAnimation(0, 700, 2000)
 
-  console.log(value)
   return (
     <HomeContainer>
       <LogoContainer>
