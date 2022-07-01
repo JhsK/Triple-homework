@@ -30,16 +30,10 @@ export const IntroductionContainer = styled.div`
 `
 
 export const TextContainer = styled.div`
-  font-size: 36px;
-  letter-spacing: -1px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   animation: ${fadeIn} 700ms linear 100ms;
-
-  strong {
-    font-weight: bold;
-  }
 `
 
 export const AwardsContainer = styled.div`

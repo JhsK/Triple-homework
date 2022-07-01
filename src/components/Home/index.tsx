@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import useCountAnimation from '../hooks/useCountAnimation'
 import {
   AwardsContainer,
   HomeContainer,
@@ -6,9 +8,13 @@ import {
   LogoContainer,
   TextContainer,
 } from './style'
-import Image from 'next/image'
+import { COUNT_NUMBER_TEXT } from '../../constant/index'
+import NumberCount from './numberCount'
 
 const Home = () => {
+  const value = useCountAnimation(0, 700, 2000)
+
+  console.log(value)
   return (
     <HomeContainer>
       <LogoContainer>
@@ -22,15 +28,13 @@ const Home = () => {
       </LogoContainer>
       <IntroductionContainer>
         <TextContainer>
-          <span>
-            <strong>700만 명</strong>의 여행자
-          </span>
-          <span>
-            <strong>100만 명</strong>의 여행 리뷰
-          </span>
-          <span>
-            <strong>470만 개</strong>의 여행 일정
-          </span>
+          {COUNT_NUMBER_TEXT.map((item) => (
+            <NumberCount
+              countValue={item.countValue}
+              strongText={item.strongText}
+              basicText={item.basicText}
+            />
+          ))}
         </TextContainer>
         <AwardsContainer>
           <div className="container">
