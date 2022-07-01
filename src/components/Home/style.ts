@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { fadeIn } from '../../theme'
 
 export const HomeContainer = styled.div`
   font-family: sans-serif;
@@ -10,6 +11,7 @@ export const LogoContainer = styled.div`
   position: relative;
   width: 400px;
   height: 338px;
+  animation: ${fadeIn} 700ms linear;
 
   .subTitle {
     position: absolute;
@@ -33,6 +35,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation: ${fadeIn} 700ms linear 100ms;
 
   strong {
     font-weight: bold;
@@ -45,6 +48,7 @@ export const AwardsContainer = styled.div`
   height: 54px;
   font-size: 14px;
   line-height: 22px;
+  animation: ${fadeIn} 700ms linear 200ms;
 
   .container {
     display: flex;
