@@ -18,6 +18,7 @@ const Home = () => {
     <HomeContainer>
       <LogoContainer>
         <Image
+          loading="eager"
           src={'/triple2x.png'}
           width={400}
           height={338}
@@ -39,6 +40,7 @@ const Home = () => {
         <AwardsContainer>
           <div className="container">
             <Image
+              loading="eager"
               src={'/play-store2x.png'}
               width={54}
               height={54}
@@ -52,6 +54,7 @@ const Home = () => {
           </div>
           <div className="container">
             <Image
+              loading="eager"
               src={'/badge-apple4x.png'}
               width={54}
               height={54}
