@@ -9,7 +9,7 @@ import {
   TextContainer,
 } from './style'
 import { COUNT_NUMBER_TEXT } from '../../constant/index'
-import NumberCount from './numberCount'
+import NumberCount from './NumberCount'
 
 const Home = () => {
   const value = useCountAnimation(0, 700, 2000)
